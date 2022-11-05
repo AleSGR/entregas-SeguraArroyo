@@ -1,0 +1,360 @@
+
+
+@import "variables";
+@import "navegador";
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{font-family: $titulos;}
+h2{font-family: $titulos;}
+h3{font-family: $texto;}
+h4{font-family: $texto;}
+p{font-family: $texto;}
+
+.paginaMesas{
+    background-image: url(..//imagenes/fondomesasnegro.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: 
+    "header mesas mesas pendientes"
+    "header mesas mesas pendientes";
+    color: $colorpositivo;
+    
+
+.mesas{
+    grid-area: mesas;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 14rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+}
+.Mesa{
+
+    min-height: 6rem;
+    width: 13rem;
+    margin: 3px;
+    .nombreMesa{
+        height: 1.5rem;
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid grey;
+        font-family:$texto;
+        color: $colorpositivo;
+    }
+    .itemsMesa{
+        
+    border-radius: 10px;
+        padding: 4px;
+
+        li{ 
+            font-family: $texto;
+            list-style: none;
+            margin-bottom: 2px;
+            font-size: 0.8rem;
+        }
+    }    
+}
+.pendientes{
+    grid-area: pendientes;
+    border: 3px solid grey;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 20rem;
+    padding: 5px;
+    margin: 7px;
+    .pendientesTitulo{
+        text-align: center; 
+        width: 20rem;
+        h2{
+        
+        font-family: $titulos;
+    }}
+.subcajaPendientes{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    width:100%;
+    height: 9.5rem;
+    font-family: $texto;
+    h4{
+        font-size: 1rem;
+    }
+    li{
+        list-style:circle;
+    }
+}
+.itemsPendientes{
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 100%;
+    width: 80%;
+    font-size: 0.8rem;
+    padding-left: 3px;
+    background-color: rgba(205, 205, 205, 0.199);
+}}}
+
+.paginaCocina{
+    background-image: url(../imagenes/fondometal.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: 
+    "header pendientes mesas mesas"
+    "header pendientes mesas mesas";
+    color: $colorpositivo;
+    .navbar{
+        background-image: url(../imagenes/mediosarten.png);
+        a{text-decoration: none;
+            color: $colorpositivo;
+        }}
+        .pendientes{
+        grid-area: pendientes;
+        border: 3px solid grey;
+        border-radius: 10px;
+        text-align: left;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 25rem;
+        padding: 5px;
+        margin: 4px;
+        margin-left: 14rem;
+        .pendientesTitulo{
+            text-align: center; 
+            width: 20rem;
+            h2{
+                color: $colornegativo;
+            font-family: $titulos;
+        }}
+    .categoriasPendientes{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;   
+    }
+    .subcajaPendientes{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-end;
+        width:50%;
+        height: 9.5rem;
+        font-family: $texto;
+        h4{
+            font-size: 1rem;
+            color: $colornegativo;
+        }
+        li{
+            list-style:circle;
+        }
+    }
+    .itemsPendientes{
+        border: 1px solid grey;
+        border-radius: 10px;
+        height: 100%;
+        width: 80%;
+        font-size: 0.8rem;
+        padding-left: 3px;
+        color: $colornegativo;
+        background-color: rgba(205, 205, 205, 0.525);
+    }}
+    .mesas{
+        grid-area: mesas;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    
+    }
+    .Mesa{
+        min-height: 6rem;
+        width: 13rem;
+        margin: 3px;
+        .nombreMesa{
+            height: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid grey;
+            font-family:$texto;
+            color: $colornegativo;
+        }
+        .itemsMesa{
+            background-color: rgba(205, 205, 205, 0.525);    
+        border-radius: 10px;
+            padding: 4px;
+    
+            li{ 
+                font-family: $texto;
+                list-style: none;
+                margin-bottom: 2px;
+                font-size: 0.8rem;
+                color: $colornegativo;
+            }
+        }    
+    }
+}
+.paginaCompras{
+    background-image: url(../imagenes/fondoinventario.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: 
+    "header entradas inventario inventario"
+    "header entradas inventario inventario"
+    "header ordenes compras compras"
+    "header ordenes compras compras";
+    color: $colorpositivo;
+    .navbar{
+        background-image: url(../imagenes/mediabascula.png);
+        .linknav.cinco{
+            transform:translate(-5px,-40px);
+            &:hover{transform:scale(1.1,1.1)translate(0px,-40px);}
+        }
+        a{text-decoration: none;
+        color: $colornegativo;
+        }}
+
+    .inventario{
+        grid-area: inventario;
+        border: 3px solid $colorpositivo;
+        border-radius: 10px;
+        color: $colorpositivo;
+        width: 45rem;
+        font-family: $texto;
+        padding: 5px;
+        margin: 5px;
+        h1{font-family: $titulos;
+        text-align: center;}
+    }
+    .formEntradas{
+        grid-area:entradas;
+        border: 3px solid $colorpositivo;
+        border-radius: 10px;
+        color: $colorpositivo;
+        font-family: $texto;
+        width: 17rem;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 5px;
+        margin: 5px;
+        margin-left: 13rem;
+        align-items: center;
+        h2{font-family: $titulos;
+        text-align: center;}
+        p{margin-top: 10px;margin-bottom: 10px;}
+        .registrarEntrada{
+            @include boton;
+        }
+    }
+    .ordenes{
+        grid-area:ordenes;
+        width: 17rem;
+        border: 3px solid $colorpositivo;
+        border-radius: 10px;
+        color: $colorpositivo;
+        font-family: $texto;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 5px;
+        margin: 5px;
+        margin-left: 13rem;
+        h2{font-family: $titulos;
+            text-align: center;}
+        .subcajaOrdenes{
+            padding-left: 1.5rem;
+        }
+    }
+    .compras{
+        grid-area:compras;
+        width: 45rem;
+        border: 3px solid $colorpositivo;
+        border-radius: 10px;
+        color: $colorpositivo;
+        font-family: $texto;
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        .calendario{height: 25rem;}
+        h2{font-family: $titulos;
+            text-align: center;}
+        h3{font-family: $texto;
+            text-align: center;}
+    }
+
+}
+.paginaReporte{
+    background-image: url(../imagenes/fondopuerta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: grid;
+    grid-template-areas: 
+    "header entradas inventario inventario"
+    "header entradas inventario inventario"
+    "header ordenes compras compras"
+    "header ordenes compras compras";
+    color: $colorpositivo;
+    .navbar{
+        background-image: url(../imagenes/mediaventana.png);
+        .linknav.cuatro{
+            transform:translate(45px,-15px);
+         }
+        .linknav.cinco{
+            transform:translate(-15px,-40px);
+         }
+        a{text-decoration: none;
+        color: $colorpositivo;
+        }}}
+        
+.paginaNota{
+    display: grid;
+    grid: 
+    "productos productos productos cierreNota";
+
+#productos{
+    grid-area: productos;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: flex-start;
+    justify-content: flex-start; 
+    border: 3px solid grey;
+
+}
+.card{
+    border: 2px solid rgb(164, 164, 164);
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    width: 10rem;
+    height:10rem;
+    margin: 5px
+}
+#cierreNota{
+    grid-area: cierreNota;
+    border: 3px solid grey;
+    height: 28rem;
+    width: 26rem;
+    
+}
+
+
+
+}

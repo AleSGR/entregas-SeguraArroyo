@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@font-face {
+  font-family: "Mergian Regular Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("../mergian-cufonfonts-webfont"), url("../mergian-cufonfonts-webfont/mergian-regular.woff") format("woff");
+}
+header {
+  grid-area: header;
+  position: fixed;
+}
+header .navbar {
+  background-image: url(../imagenes/medioplato.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  position: fixed;
+}
+header .navbar .linknav {
+  list-style: none;
+  font-family: "Mergian Regular Regular";
+  display: flex;
+  height: 3.6rem;
+  margin: 2rem;
+  width: 6rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+}
+header .navbar .linknav.uno {
+  transform: translate(-15px, 40px);
+}
+header .navbar .linknav.uno:hover {
+  transform: scale(1.05, 1.05) translate(0px, 40px);
+}
+header .navbar .linknav.dos {
+  /* font-size: 2.1rem;
+      color:rgb(95, 80, 0);
+      font-weight: bold;*/
+  transform: translate(50px, 15px);
+}
+header .navbar .linknav.dos:hover {
+  transform: scale(1.05, 1.05) translate(50px, 15px);
+}
+header .navbar .linknav.tres {
+  transform: translate(75px, 0px);
+}
+header .navbar .linknav.tres:hover {
+  transform: scale(1.05, 1.05) translate(70px, 0px);
+}
+header .navbar .linknav.cuatro {
+  transform: translate(47px, -15px);
+}
+header .navbar .linknav.cuatro:hover {
+  transform: scale(1.05, 1.05) translate(45px, -15px);
+}
+header .navbar .linknav.cinco {
+  transform: translate(-15px, -40px);
+}
+header .navbar .linknav.cinco:hover {
+  transform: scale(1.05, 1.05) translate(-15px, -40px);
+}
+header .navbar a {
+  text-decoration: none;
+  color: rgb(45, 45, 45);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Mergian Regular Regular";
+}
+
+h2 {
+  font-family: "Mergian Regular Regular";
+}
+
+h3 {
+  font-family: "Montserrat";
+}
+
+h4 {
+  font-family: "Montserrat";
+}
+
+p {
+  font-family: "Montserrat";
+}
+
+.paginaMesas {
+  background-image: url(..//imagenes/fondomesasnegro.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: "header mesas mesas pendientes" "header mesas mesas pendientes";
+  color: whitesmoke;
+}
+.paginaMesas .mesas {
+  grid-area: mesas;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 14rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.paginaMesas .Mesa {
+  min-height: 6rem;
+  width: 13rem;
+  margin: 3px;
+}
+.paginaMesas .Mesa .nombreMesa {
+  height: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid grey;
+  font-family: "Montserrat";
+  color: whitesmoke;
+}
+.paginaMesas .Mesa .itemsMesa {
+  border-radius: 10px;
+  padding: 4px;
+}
+.paginaMesas .Mesa .itemsMesa li {
+  font-family: "Montserrat";
+  list-style: none;
+  margin-bottom: 2px;
+  font-size: 0.8rem;
+}
+.paginaMesas .pendientes {
+  grid-area: pendientes;
+  border: 3px solid grey;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 20rem;
+  padding: 5px;
+  margin: 7px;
+}
+.paginaMesas .pendientes .pendientesTitulo {
+  text-align: center;
+  width: 20rem;
+}
+.paginaMesas .pendientes .pendientesTitulo h2 {
+  font-family: "Mergian Regular Regular";
+}
+.paginaMesas .pendientes .subcajaPendientes {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 9.5rem;
+  font-family: "Montserrat";
+}
+.paginaMesas .pendientes .subcajaPendientes h4 {
+  font-size: 1rem;
+}
+.paginaMesas .pendientes .subcajaPendientes li {
+  list-style: circle;
+}
+.paginaMesas .pendientes .itemsPendientes {
+  border: 1px solid grey;
+  border-radius: 10px;
+  height: 100%;
+  width: 80%;
+  font-size: 0.8rem;
+  padding-left: 3px;
+  background-color: rgba(205, 205, 205, 0.199);
+}
+
+.paginaCocina {
+  background-image: url(../imagenes/fondometal.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: "header pendientes mesas mesas" "header pendientes mesas mesas";
+  color: whitesmoke;
+}
+.paginaCocina .navbar {
+  background-image: url(../imagenes/mediosarten.png);
+}
+.paginaCocina .navbar a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.paginaCocina .pendientes {
+  grid-area: pendientes;
+  border: 3px solid grey;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 25rem;
+  padding: 5px;
+  margin: 4px;
+  margin-left: 14rem;
+}
+.paginaCocina .pendientes .pendientesTitulo {
+  text-align: center;
+  width: 20rem;
+}
+.paginaCocina .pendientes .pendientesTitulo h2 {
+  color: rgb(45, 45, 45);
+  font-family: "Mergian Regular Regular";
+}
+.paginaCocina .pendientes .categoriasPendientes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.paginaCocina .pendientes .subcajaPendientes {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  height: 9.5rem;
+  font-family: "Montserrat";
+}
+.paginaCocina .pendientes .subcajaPendientes h4 {
+  font-size: 1rem;
+  color: rgb(45, 45, 45);
+}
+.paginaCocina .pendientes .subcajaPendientes li {
+  list-style: circle;
+}
+.paginaCocina .pendientes .itemsPendientes {
+  border: 1px solid grey;
+  border-radius: 10px;
+  height: 100%;
+  width: 80%;
+  font-size: 0.8rem;
+  padding-left: 3px;
+  color: rgb(45, 45, 45);
+  background-color: rgba(205, 205, 205, 0.525);
+}
+.paginaCocina .mesas {
+  grid-area: mesas;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.paginaCocina .Mesa {
+  min-height: 6rem;
+  width: 13rem;
+  margin: 3px;
+}
+.paginaCocina .Mesa .nombreMesa {
+  height: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid grey;
+  font-family: "Montserrat";
+  color: rgb(45, 45, 45);
+}
+.paginaCocina .Mesa .itemsMesa {
+  background-color: rgba(205, 205, 205, 0.525);
+  border-radius: 10px;
+  padding: 4px;
+}
+.paginaCocina .Mesa .itemsMesa li {
+  font-family: "Montserrat";
+  list-style: none;
+  margin-bottom: 2px;
+  font-size: 0.8rem;
+  color: rgb(45, 45, 45);
+}
+
+.paginaCompras {
+  background-image: url(../imagenes/fondoinventario.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: "header entradas inventario inventario" "header entradas inventario inventario" "header ordenes compras compras" "header ordenes compras compras";
+  color: whitesmoke;
+}
+.paginaCompras .navbar {
+  background-image: url(../imagenes/mediabascula.png);
+}
+.paginaCompras .navbar .linknav.cinco {
+  transform: translate(-5px, -40px);
+}
+.paginaCompras .navbar .linknav.cinco:hover {
+  transform: scale(1.1, 1.1) translate(0px, -40px);
+}
+.paginaCompras .navbar a {
+  text-decoration: none;
+  color: rgb(45, 45, 45);
+}
+.paginaCompras .inventario {
+  grid-area: inventario;
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
+  color: whitesmoke;
+  width: 45rem;
+  font-family: "Montserrat";
+  padding: 5px;
+  margin: 5px;
+}
+.paginaCompras .inventario h1 {
+  font-family: "Mergian Regular Regular";
+  text-align: center;
+}
+.paginaCompras .formEntradas {
+  grid-area: entradas;
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-family: "Montserrat";
+  width: 17rem;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 5px;
+  margin: 5px;
+  margin-left: 13rem;
+  align-items: center;
+}
+.paginaCompras .formEntradas h2 {
+  font-family: "Mergian Regular Regular";
+  text-align: center;
+}
+.paginaCompras .formEntradas p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.paginaCompras .formEntradas .registrarEntrada {
+  background: linear-gradient(to top, silver, whitesmoke);
+  border: outset 2px white;
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+.paginaCompras .ordenes {
+  grid-area: ordenes;
+  width: 17rem;
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-family: "Montserrat";
+  display: flex;
+  flex-flow: column wrap;
+  padding: 5px;
+  margin: 5px;
+  margin-left: 13rem;
+}
+.paginaCompras .ordenes h2 {
+  font-family: "Mergian Regular Regular";
+  text-align: center;
+}
+.paginaCompras .ordenes .subcajaOrdenes {
+  padding-left: 1.5rem;
+}
+.paginaCompras .compras {
+  grid-area: compras;
+  width: 45rem;
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-family: "Montserrat";
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+.paginaCompras .compras .calendario {
+  height: 25rem;
+}
+.paginaCompras .compras h2 {
+  font-family: "Mergian Regular Regular";
+  text-align: center;
+}
+.paginaCompras .compras h3 {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.paginaReporte {
+  background-image: url(../imagenes/fondopuerta.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: "header entradas inventario inventario" "header entradas inventario inventario" "header ordenes compras compras" "header ordenes compras compras";
+  color: whitesmoke;
+}
+.paginaReporte .navbar {
+  background-image: url(../imagenes/mediaventana.png);
+}
+.paginaReporte .navbar .linknav.cuatro {
+  transform: translate(45px, -15px);
+}
+.paginaReporte .navbar .linknav.cinco {
+  transform: translate(-15px, -40px);
+}
+.paginaReporte .navbar a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.paginaNota {
+  display: grid;
+  grid: "productos productos productos cierreNota";
+}
+.paginaNota #productos {
+  grid-area: productos;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: flex-start;
+  justify-content: flex-start;
+  border: 3px solid grey;
+}
+.paginaNota .card {
+  border: 2px solid rgb(164, 164, 164);
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  width: 10rem;
+  height: 10rem;
+  margin: 5px;
+}
+.paginaNota #cierreNota {
+  grid-area: cierreNota;
+  border: 3px solid grey;
+  height: 28rem;
+  width: 26rem;
+}/*# sourceMappingURL=estilo.css.map */
