@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@font-face {
-    font-family: 'Mergian Regular Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('../mergian-cufonfonts-webfont'), url('../mergian-cufonfonts-webfont/mergian-regular.woff') format('woff');
-    }
-$titulos: 'Mergian Regular Regular';
-$texto: 'Montserrat';
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+
+$titulos: 'Alegreya Sans SC';
+$texto: 'Alegreya Sans SC';
 $colornegativo:rgb(45, 45, 45);
 $colorpositivo:whitesmoke;
+$fondoPlata:linear-gradient(to bottom right,#BABDBF,#F2F2F2);
+$fondoVino:linear-gradient(to bottom right,#51021F,#860D2E);
+$fondoDorado:linear-gradient(to bottom right,#6A2915,#DDA67D);
+$fondoNegro:linear-gradient(to bottom right,#070A0C,#2b2b2d);
 
 @mixin boton {
     background:linear-gradient(to top,silver, whitesmoke);
@@ -18,4 +19,12 @@ $colorpositivo:whitesmoke;
     padding: 5px;
     font-family: $texto;
     font-weight: bold;
+}
+@mixin input {
+    font-family: $texto;
+    height: 1rem;
+    width: 20rem;
+    margin: 3px;
+    padding: 4px;
+    
 }

@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nota de Venta</title>
+    <title>JavaCursoCoderHouse</title>
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body class="paginaNota">
-    <div id="productos">
-        <button id="producto"> 
-        <article id="${prod.id}"class="card">
-            <h3 class="tituloCard">${prod.nombre}</h3>
-            <img src="../imagenes/${prod.imagen}" alt="${prod.nombre}">
-            <div class="content">
-                <p class="descripcionCard">${prod.descripcion}</p>
-                <p class="precioCard">Precio: ${prod.precio}</p>
-            </div></button>
-         </article>
-    </div>
-    <div id="cierreNota">
 
+<body id="paginaNota">
+
+    <div id="buscadorProducto">
+        <h1>Mesa</h1>
+        <label for="nombreProducto">Buscador de productos (Por Nombre o por ID)</label>
+        <input type="text" id="buscarPorNombre">
     </div>
+    <div id="agregarProducto">
+    <form class="nuevoProducto">
+        <h2>Agregue un nuevo producto a la lista</h2>
+        <label for="tipoProducto" >Ingrese tipo de producto nuevo</label>
+        <br>
+        <input type="text" id="anadirTipoProducto">
+        <br>
+        <label for="nombreProducto" >Ingrese nombre del producto nuevo</label>
+        <br>
+        <input type="text" id="anadirNombreProducto">
+        <br>
+        <label for="descripcion" >Ingrese descripción del producto nuevo</label>
+        <br>
+        <input type="text" id="anadirDescripcion">
+        <br>
+        <label for="precio" >Ingrese precio del producto nuevo</label>
+        <br>
+        <input type="text" id="anadirPrecio">
+        <br>
+        <button id="ingresarNuevoProducto">Guardar nuevo producto</button>
+        <button id="borrarCatalogo">Borrar catálogo</button>
+    </form>
+    </div>
+
+    <div id="productos"></div>
+    <div id="notaVenta">
+        <h2>Nota de Venta</h2>
+        <div id="productosEnNota"></div>
+        <button id="cerrarNota">Cerrar Nota</button>
+    </div>
+
+
     <script src="../js/notaventa.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap");
 @font-face {
   font-family: "Mergian Regular Regular";
   font-style: normal;
@@ -10,7 +12,7 @@ header {
   position: fixed;
 }
 header .navbar {
-  background-image: url(../imagenes/medioplato.png);
+  background-image: url(../img/medioplato.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +25,7 @@ header .navbar {
 }
 header .navbar .linknav {
   list-style: none;
-  font-family: "Mergian Regular Regular";
+  font-family: "Alegreya Sans SC";
   display: flex;
   height: 3.6rem;
   margin: 2rem;
@@ -77,27 +79,39 @@ header .navbar a {
 }
 
 h1 {
-  font-family: "Mergian Regular Regular";
+  font-family: "Alegreya Sans SC";
 }
 
 h2 {
-  font-family: "Mergian Regular Regular";
+  font-family: "Alegreya Sans SC";
 }
 
 h3 {
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
 }
 
 h4 {
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
+  font-weight: 300;
 }
 
 p {
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
+  font-weight: 300;
+}
+
+label {
+  font-family: "Alegreya Sans SC";
+  font-weight: 200;
+}
+
+li {
+  font-family: "Alegreya Sans SC";
+  font-weight: 200;
 }
 
 .paginaMesas {
-  background-image: url(..//imagenes/fondomesasnegro.jpg);
+  background-image: url(../img/fondomesasnegro.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,7 +138,7 @@ p {
   border-radius: 10px;
   text-align: center;
   border: 1px solid grey;
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
   color: whitesmoke;
 }
 .paginaMesas .Mesa .itemsMesa {
@@ -132,7 +146,7 @@ p {
   padding: 4px;
 }
 .paginaMesas .Mesa .itemsMesa li {
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
   list-style: none;
   margin-bottom: 2px;
   font-size: 0.8rem;
@@ -155,7 +169,7 @@ p {
   width: 20rem;
 }
 .paginaMesas .pendientes .pendientesTitulo h2 {
-  font-family: "Mergian Regular Regular";
+  font-family: "Alegreya Sans SC";
 }
 .paginaMesas .pendientes .subcajaPendientes {
   display: flex;
@@ -164,7 +178,7 @@ p {
   justify-content: flex-end;
   width: 100%;
   height: 9.5rem;
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
 }
 .paginaMesas .pendientes .subcajaPendientes h4 {
   font-size: 1rem;
@@ -183,7 +197,7 @@ p {
 }
 
 .paginaCocina {
-  background-image: url(../imagenes/fondometal.jpg);
+  background-image: url(../img/fondometal.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -192,7 +206,7 @@ p {
   color: whitesmoke;
 }
 .paginaCocina .navbar {
-  background-image: url(../imagenes/mediosarten.png);
+  background-image: url(../img/mediosarten.png);
 }
 .paginaCocina .navbar a {
   text-decoration: none;
@@ -218,7 +232,7 @@ p {
 }
 .paginaCocina .pendientes .pendientesTitulo h2 {
   color: rgb(45, 45, 45);
-  font-family: "Mergian Regular Regular";
+  font-family: "Alegreya Sans SC";
 }
 .paginaCocina .pendientes .categoriasPendientes {
   display: flex;
@@ -233,7 +247,7 @@ p {
   justify-content: flex-end;
   width: 50%;
   height: 9.5rem;
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
 }
 .paginaCocina .pendientes .subcajaPendientes h4 {
   font-size: 1rem;
@@ -270,7 +284,7 @@ p {
   border-radius: 10px;
   text-align: center;
   border: 1px solid grey;
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
   color: rgb(45, 45, 45);
 }
 .paginaCocina .Mesa .itemsMesa {
@@ -279,7 +293,7 @@ p {
   padding: 4px;
 }
 .paginaCocina .Mesa .itemsMesa li {
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
   list-style: none;
   margin-bottom: 2px;
   font-size: 0.8rem;
@@ -287,16 +301,13 @@ p {
 }
 
 .paginaCompras {
-  background-image: url(../imagenes/fondoinventario.jpg);
+  background: linear-gradient(to bottom right, #51021F, #860D2E);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   grid-template-areas: "header entradas inventario inventario" "header entradas inventario inventario" "header ordenes compras compras" "header ordenes compras compras";
   color: whitesmoke;
-}
-.paginaCompras .navbar {
-  background-image: url(../imagenes/mediabascula.png);
 }
 .paginaCompras .navbar .linknav.cinco {
   transform: translate(-5px, -40px);
@@ -314,12 +325,12 @@ p {
   border-radius: 10px;
   color: whitesmoke;
   width: 45rem;
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
   padding: 5px;
   margin: 5px;
 }
 .paginaCompras .inventario h1 {
-  font-family: "Mergian Regular Regular";
+  font-family: "Alegreya Sans SC";
   text-align: center;
 }
 .paginaCompras .formEntradas {
@@ -327,7 +338,7 @@ p {
   border: 3px solid whitesmoke;
   border-radius: 10px;
   color: whitesmoke;
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
   width: 17rem;
   display: flex;
   flex-flow: column wrap;
@@ -337,7 +348,7 @@ p {
   align-items: center;
 }
 .paginaCompras .formEntradas h2 {
-  font-family: "Mergian Regular Regular";
+  font-family: "Alegreya Sans SC";
   text-align: center;
 }
 .paginaCompras .formEntradas p {
@@ -352,7 +363,7 @@ p {
   width: -moz-fit-content;
   width: fit-content;
   padding: 5px;
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
   font-weight: bold;
 }
 .paginaCompras .ordenes {
@@ -361,7 +372,7 @@ p {
   border: 3px solid whitesmoke;
   border-radius: 10px;
   color: whitesmoke;
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
   display: flex;
   flex-flow: column wrap;
   padding: 5px;
@@ -369,7 +380,7 @@ p {
   margin-left: 13rem;
 }
 .paginaCompras .ordenes h2 {
-  font-family: "Mergian Regular Regular";
+  font-family: "Alegreya Sans SC";
   text-align: center;
 }
 .paginaCompras .ordenes .subcajaOrdenes {
@@ -381,7 +392,7 @@ p {
   border: 3px solid whitesmoke;
   border-radius: 10px;
   color: whitesmoke;
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
   margin: 5px;
   padding: 5px;
   display: flex;
@@ -393,25 +404,22 @@ p {
   height: 25rem;
 }
 .paginaCompras .compras h2 {
-  font-family: "Mergian Regular Regular";
+  font-family: "Alegreya Sans SC";
   text-align: center;
 }
 .paginaCompras .compras h3 {
-  font-family: "Montserrat";
+  font-family: "Alegreya Sans SC";
   text-align: center;
 }
 
 .paginaReporte {
-  background-image: url(../imagenes/fondopuerta.jpg);
+  background: linear-gradient(to bottom right, #6A2915, #DDA67D);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   grid-template-areas: "header entradas inventario inventario" "header entradas inventario inventario" "header ordenes compras compras" "header ordenes compras compras";
   color: whitesmoke;
-}
-.paginaReporte .navbar {
-  background-image: url(../imagenes/mediaventana.png);
 }
 .paginaReporte .navbar .linknav.cuatro {
   transform: translate(45px, -15px);
@@ -421,33 +429,190 @@ p {
 }
 .paginaReporte .navbar a {
   text-decoration: none;
-  color: whitesmoke;
 }
 
-.paginaNota {
+#paginaNota {
   display: grid;
-  grid: "productos productos productos cierreNota";
+  grid: "buscadorProducto buscadorProducto buscadorProducto notaVenta" "productos productos productos notaVenta" "agregarProducto agregarProducto agregarProducto notaVenta";
+  background: linear-gradient(to bottom right, #070A0C, #2b2b2d);
+  background-repeat: none;
+  background-size: cover;
+  padding: 10px;
+  color: whitesmoke;
 }
-.paginaNota #productos {
+#paginaNota #productos {
   grid-area: productos;
   display: flex;
   flex-flow: row wrap;
-  text-align: flex-start;
-  justify-content: flex-start;
-  border: 3px solid grey;
+  align-items: flex-start;
+  justify-content: center;
+  border-top: 3px solid grey;
+  border-bottom: 3px solid grey;
+  border-radius: 5px;
 }
-.paginaNota .card {
-  border: 2px solid rgb(164, 164, 164);
-  border-radius: 10px;
+#paginaNota #productos .card {
   text-align: center;
+  width: 8.4rem;
+  margin: 15px;
+  height: 9rem;
+}
+#paginaNota #productos .card .btnAdd {
+  color: whitesmoke;
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -4px -4px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+  display: inline-block;
+  border-radius: 10px;
   padding: 5px;
-  width: 10rem;
-  height: 10rem;
+  width: 8.4rem;
+  min-height: 9rem;
+  max-height: 12rem;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -5px -5px 12px 0 rgba(89, 89, 89, 0.3);
+}
+#paginaNota #productos .card .btnAdd h3 {
+  font-size: 1rem;
+}
+#paginaNota #productos .card .btnAdd p {
+  font-size: 0.8rem;
+}
+#paginaNota #productos .card .btnAdd:active {
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -4px -4px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(89, 89, 89, 0.3);
+}
+#paginaNota #notaVenta {
+  grid-area: notaVenta;
+  border-radius: 10px;
+  width: 23rem;
+  background: linear-gradient(to bottom right, #6A2915, #DDA67D);
+  color: whitesmoke;
+  padding: 7px;
+  margin-left: 15px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+#paginaNota #notaVenta #cerrarNota {
+  background: linear-gradient(to top, silver, whitesmoke);
+  border: outset 2px white;
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  font-family: "Alegreya Sans SC";
+  font-weight: bold;
+  background: linear-gradient(to bottom right, #070A0C, #2b2b2d);
+  border: 1px solid black;
+  color: whitesmoke;
+}
+#paginaNota #notaVenta .itemNota {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+#paginaNota #notaVenta .itemNota .boxTitulo {
+  display: flex;
+  flex-flow: row, wrap;
+  width: 80%;
+}
+#paginaNota #notaVenta .itemNota .boxPrecio {
+  width: 20%;
+}
+#paginaNota #notaVenta .itemNota h3 {
+  margin-left: 5px;
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 500;
+}
+#paginaNota #notaVenta .itemNota p {
+  margin-left: 5px;
+}
+#paginaNota #buscadorProducto {
+  grid: buscadorProducto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 53rem;
+}
+#paginaNota #buscadorProducto label {
+  font-size: 0.9rem;
+  height: 1rem;
+  width: 30rem;
+  text-align: end;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+#paginaNota #buscadorProducto input {
+  font-family: "Alegreya Sans SC";
+  height: 1rem;
+  width: 20rem;
+  margin: 3px;
+  padding: 4px;
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -4px -4px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+  color: whitesmoke;
+}
+#paginaNota #agregarProducto {
+  grid-area: agregarProducto;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#paginaNota #agregarProducto .nuevoProducto {
   margin: 5px;
 }
-.paginaNota #cierreNota {
-  grid-area: cierreNota;
-  border: 3px solid grey;
-  height: 28rem;
-  width: 26rem;
+#paginaNota #agregarProducto .nuevoProducto label {
+  font-size: 1rem;
+  height: 1rem;
+}
+#paginaNota #agregarProducto .nuevoProducto input {
+  font-family: "Alegreya Sans SC";
+  height: 1rem;
+  width: 20rem;
+  margin: 3px;
+  padding: 4px;
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -4px -4px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+}
+#paginaNota #agregarProducto .nuevoProducto button {
+  margin-top: 5px;
+  background: linear-gradient(to top, silver, whitesmoke);
+  border: outset 2px white;
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  font-family: "Alegreya Sans SC";
+  font-weight: bold;
 }/*# sourceMappingURL=estilo.css.map */
+
