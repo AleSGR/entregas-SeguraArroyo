@@ -27,7 +27,6 @@ let producto6 = new Producto(6, "Fria", "Frappe Fresa", "frappeFR.png", "Hecho c
 // Añadirlos al Array
 let listaProductos = []
 // Añadir al carrito
-let notaVenta = []
 // Storage de los productos
 if(localStorage.getItem("listaProductos")){
     listaProductos=JSON.parse(localStorage.getItem("listaProductos"))
@@ -38,12 +37,18 @@ if(localStorage.getItem("listaProductos")){
     localStorage.setItem("listaProductos",JSON.stringify(listaProductos))
 }
 // Storage del carrito
-if(localStorage.getItem("notaVentaMesa")){
-    notaVenta = JSON.parse(localStorage.getItem("notaVentaMesa"))
-}else{
-    console.log("Seteando la nota por primera vez")
-    localStorage.setItem("notaVentaMesa",JSON.stringify(notaVenta))
-}   
+// if(localStorage.getItem("notaVentaMesa")){
+//     notaVenta = JSON.parse(localStorage.getItem("notaVentaMesa"))
+// }else{
+//     console.log("Seteando la nota por primera vez")
+//     localStorage.setItem("notaVentaMesa",JSON.stringify(notaVenta))
+// }   
+// Equivalencia con OR
+let notaVenta = JSON.parse(localStorage.getItem("notaVentaMesa")) || []
+console.log(notaVenta)
+
+
+
 // DOM
 let btnAgregarProducto = document.getElementById("ingresarNuevoProducto")
 let productosEnNota=document.getElementById("productosEnNota")
@@ -69,12 +74,15 @@ function buscarProducto(input,array) {
         (Producto)=>Producto.nombre.toLowerCase().includes(input.toLowerCase()) 
         || Producto.id == input
     )
-    if(busqueda.length==0){
-        productoPlantilla.innerHTML =`<p class="textoError">No se encontró ningún producto</p>`
+    // if(busqueda.length==0){
+    //     productoPlantilla.innerHTML =`<p class="textoError">No se encontró ningún producto</p>`
         
-    }else{
-        mostrarProductos(busqueda)
-    }
+    // }else{
+    //     mostrarProductos(busqueda)
+    // }
+    busqueda.length==0?
+    productoPlantilla.innerHTML =`<p class="textoError">No se encontró ningún producto</p>`:
+    mostrarProductos(busqueda)
 }
 buscadorNombre.addEventListener("input",()=>{buscarProducto(buscadorNombre.value,listaProductos)})
 
@@ -178,4 +186,5 @@ btnOcultarCatalogo.onClick=()=>{productoPlantilla.innerHTML=""}
 
 // Funcion imprimir en el modal
 // Funcion subtotal
+
 
